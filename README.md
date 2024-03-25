@@ -1,2 +1,2 @@
 # github_actions_testing
-Create a test to Github Actions (hola).
+Create a test to Github Actions (adios).
