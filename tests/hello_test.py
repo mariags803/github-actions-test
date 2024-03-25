@@ -1,5 +1,5 @@
 from src.hello import say_hello
 
 def test_say_hello():
-    assert say_hello() == 'Hello'
 
+    assert say_hello() == 'Hello'
