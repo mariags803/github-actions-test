@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - '**'
-  pull_request_target:
+  pull_request:
     types: [ opened, synchronize, reopened, edited ]
     branches:
       - develop
@@ -27,3 +27,12 @@ jobs:
     - name: Test with pytest
       run: |
         pytest tests/
+
+    - name: Check if secrets are accessible
+      run: |
+          if [[ "x${{ secrets.MY_SECRET }}" == "xval" ]]; then
+            echo "Access to secrets"
+          else
+            echo "No access to secrets"
+            exit 1
+          fi
