@@ -3,4 +3,4 @@ def say_hello():
 
 
 def say_goodbye():
-    return 'Good bye'
+    return 'Good Bye'

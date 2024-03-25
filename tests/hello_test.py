@@ -5,4 +5,4 @@ def test_say_hello():
     assert say_hello() == 'Hello'
 
 def test_say_good_bye():
-    assert say_good_bye() == 'Good bye'
+    assert say_good_bye() == 'Good Bye'
