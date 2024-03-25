@@ -1,4 +1,4 @@
-from src.goodbye import say_good_bye
+from src.goodbye import say_goodbye
 
 def test_say_good_bye():
-    assert say_good_bye() == 'Good Bye'
+    assert say_goodbye() == 'Good Bye'
