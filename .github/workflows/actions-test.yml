@@ -25,6 +25,9 @@ jobs:
 
     - name: Check if secrets are accessible
       run: |
+          echo "Repository Event Full Name: ${{ github.event.repository.full_name }}"
+          echo "Repository Name: ${{ github.repository }}"
+          echo "Is Fork: ${{ github.event.repository.fork }}"
           if [[ "x${{ secrets.MY_SECRET }}" == "xval" ]]; then
             echo "Access to secrets"
           else
